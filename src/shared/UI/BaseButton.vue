@@ -11,7 +11,7 @@ defineProps({
   <div class="button-wrapper">
     <button class="button">
       {{ $t('tg') }}
-      <img src="../../components/icons/tg.svg" alt="Telegram">
+      <img src="@/assets/icons/tg.svg" alt="Telegram">
     </button>
 
     <span class="border" :style="{ borderColor: color }"/>
@@ -62,7 +62,6 @@ button {
   .button {
     font-size: 12px;
     padding: 10px;
-
   }
 
   .button img {

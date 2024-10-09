@@ -5,13 +5,13 @@
 
       <div class="footer-icons">
         <a href="#">
-          <img src="@/components/icons/linkedin.svg" alt="LinkedIn">
+          <img src="@/assets/icons/linkedin.svg" alt="LinkedIn">
         </a>
         <a href="#">
-          <img src="@/components/icons/telegram.svg" alt="Telegram">
+          <img src="@/assets/icons/telegram.svg" alt="Telegram">
         </a>
         <a href="#">
-          <img src="@/components/icons/instagram.svg" alt="Instagram">
+          <img src="@/assets/icons/instagram.svg" alt="Instagram">
         </a>
       </div>
     </div>

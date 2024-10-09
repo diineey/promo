@@ -10,7 +10,7 @@ const {
 </script>
 
 <template>
-  <div style="display: flex; gap: 16px; align-items: center;">
+  <div class="lang-wrapper" style="">
     <button
       v-for="lang in languages"
       class="language-button"
@@ -24,6 +24,12 @@ const {
 </template>
 
 <style scoped>
+.lang-wrapper {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
 .language-button {
   background: none;
   border: none;
@@ -40,5 +46,21 @@ const {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .language-button {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .language-button.active {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .lang-wrapper {
+    gap: 30px;
+  }
 }
 </style>

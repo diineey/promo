@@ -1,17 +1,37 @@
 <script setup>
 import BaseButton from '@/shared/UI/BaseButton.vue'
 import LanguagesSwitch from '@/shared/composables/languages-switch/LanguagesSwitch.vue'
+import {ref} from "vue";
+
+const isMenuOpen = ref(false);
+
+function toggleMenu() {
+  isMenuOpen.value = !isMenuOpen.value;
+}
+
+document.body.style.overflow = isMenuOpen.value ? 'hidden' : 'auto';
 </script>
 
 <template>
   <header class="header-wrapper">
     <div class="header-section-black">
-      <img src="@/assets/img/logo.svg" alt="logo">
+
+      <div class="header-menu">
+        <img class="logo" src="@/assets/img/logo.svg" alt="logo">
+
+        <div class="header-menu-lang">
+          <LanguagesSwitch />
+        </div>
+
+        <div class="menu-icon" @click="toggleMenu">
+          <img src="@/assets/icons/menu.svg" alt="Menu" width="32" height="24"/>
+        </div>
+      </div>
 
       <div class="header-section-text">
         <h1 v-html="$t('header-title')"/>
 
-        <p v-html="$t('header-text')" class="header-section-p" />
+        <p v-html="$t('header-text')" class="header-section-p"/>
 
         <BaseButton color="--white"/>
       </div>
@@ -19,11 +39,42 @@ import LanguagesSwitch from '@/shared/composables/languages-switch/LanguagesSwit
 
     <div class="header-section-blue">
       <div class="lang">
-        <LanguagesSwitch />
+        <LanguagesSwitch/>
       </div>
 
       <div class="header-img">
-        <img class="header-img" src="@/assets/img/header-img.svg" alt="" />
+        <img class="header-img" src="@/assets/img/header-img.svg" alt="Mentory"/>
+      </div>
+    </div>
+
+    <div v-if="isMenuOpen" class="menu-overlay">
+      <div class="menu-icon-close">
+        <img src="@/assets/icons/close.svg" alt="Menu" width="32" height="24" @click="toggleMenu"/>
+      </div>
+
+      <div class="menu">
+        <div>
+          <img class="menu-logo" src="@/assets/img/logo.svg" alt="logo">
+        </div>
+
+        <div class="menu-lang">
+          <LanguagesSwitch/>
+        </div>
+
+        <div class="tg-img">
+          <img src="@/assets/img/telegram.svg" alt="Telegram" width="171" />
+        </div>
+
+        <BaseButton class="menu-button"/>
+
+        <div class="menu-icons">
+          <a href="#">
+            <img src="@/assets/icons/linkedin.svg" alt="LinkedIn">
+          </a>
+          <a href="#">
+            <img src="@/assets/icons/instagram.svg" alt="Instagram">
+          </a>
+        </div>
       </div>
     </div>
   </header>
@@ -36,6 +87,7 @@ import LanguagesSwitch from '@/shared/composables/languages-switch/LanguagesSwit
   height: 100%;
   background-color: var(--blue);
   border-radius: 0 0 30px 30px;
+  position: relative;
 }
 
 .header-section-black {
@@ -55,6 +107,77 @@ import LanguagesSwitch from '@/shared/composables/languages-switch/LanguagesSwit
   justify-content: center;
   padding: 30px 0 0 0;
   border-radius: 0 0 30px 0;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-menu-lang {
+  display: none;
+}
+
+.menu-icon, .menu-icon-close {
+  cursor: pointer;
+}
+
+.menu-icon-close {
+  padding: 40px 20px 0 0;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.menu-overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: var(--black);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+}
+
+.menu {
+  width: 100%;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-icon-close {
+  display: flex;
+  justify-content: end;
+  flex: 1;
+}
+
+.menu-icon-close img {
+  display: flex;
+  justify-content: end;
+}
+
+.menu-logo {
+  display: flex;
+  align-items: center;
+  margin: 28px 0 52px 0;
+}
+
+.tg-img {
+  margin: 83px 0 35px 0;
+}
+
+.menu-button {
+  margin-bottom: 55px;
+}
+
+.menu-icons {
+  display: flex;
+  gap: 24px;
 }
 
 .header-section-blue:nth-child(1) {
@@ -112,6 +235,11 @@ import LanguagesSwitch from '@/shared/composables/languages-switch/LanguagesSwit
     border-radius: 0 0 26px 26px;
   }
 
+  .header-menu-lang {
+    display: block;
+    padding-right: 60px;
+  }
+
   .header-section-blue {
     padding: 0;
   }
@@ -135,8 +263,12 @@ import LanguagesSwitch from '@/shared/composables/languages-switch/LanguagesSwit
     padding: 40px 20px 30px 20px;
   }
 
-  .header-section-black img {
+  .logo {
     width: 134px;
+  }
+
+  .header-menu-lang {
+    display: none;
   }
 
   .header-section-text {
@@ -157,6 +289,10 @@ import LanguagesSwitch from '@/shared/composables/languages-switch/LanguagesSwit
     padding: 0;
     width: 400px;
     height: auto;
+  }
+
+  .menu-icon {
+    display: flex;
   }
 }
 
