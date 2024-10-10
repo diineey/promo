@@ -35,11 +35,11 @@ const cards = [
       <p v-html="$t('mentory-is')" class="text-center"/>
 
       <swiper-container
-        v-if="isMobile"
-        class="work-cards"
-        :space-between="20"
-        :slides-per-view="1.1"
-        :breakpoints="{
+          v-if="isMobile"
+          class="work-cards"
+          :space-between="20"
+          :slides-per-view="1.1"
+          :breakpoints="{
           '650': {
             slidesPerView: 2.5,
             spaceBetween: 20
@@ -60,9 +60,7 @@ const cards = [
       >
         <swiper-slide v-for="(card, index) in cards" :key="'first-' + index">
           <div class="works-card">
-            <div class="works-card-img">
-              <img :src="card.imgSrc" :alt="card.altText">
-            </div>
+            <img :src="card.imgSrc" :alt="card.altText">
             <h3>{{ $t(card.title) }}</h3>
             <p class="text-center">{{ $t(card.description) }}</p>
           </div>
@@ -143,15 +141,9 @@ const cards = [
     text-align: left;
   }
 
-  .works-card-img {
-    width: 160px;
-  }
-
   .works-card img {
-    width: 100%;
+    width: 180px;
     height: auto;
-    object-fit: cover;
-    border: none;
   }
 }
 </style>
