@@ -21,7 +21,13 @@ const whyCards = [
     altText: 'Easy booking',
     title: 'easy-booking',
     description: 'easy-booking-text'
-  }
+  },
+  {
+    imgSrc: new URL('../assets/img/rent.png', import.meta.url).href,
+    altText: 'Easy booking',
+    title: 'easy-booking',
+    description: 'easy-booking-text'
+  },
 ]
 </script>
 
