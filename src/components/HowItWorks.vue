@@ -5,19 +5,19 @@ const { isMobile } = useIsMobile()
 
 const cards = [
   {
-    imgSrc: new URL('../assets/img/personal.svg', import.meta.url).href,
+    imgSrc: new URL('../assets/img/personal.png', import.meta.url).href,
     altText: 'Personal Approach',
     title: 'personal-approach',
     description: 'personal-specialists'
   },
   {
-    imgSrc: new URL('../assets/img/data-cloud.svg', import.meta.url).href,
+    imgSrc: new URL('../assets/img/data-cloud.png', import.meta.url).href,
     altText: 'Feedback',
     title: 'feedback',
     description: 'feedback-help'
   },
   {
-    imgSrc: new URL('../assets/img/rent.svg', import.meta.url).href,
+    imgSrc: new URL('../assets/img/rent.png', import.meta.url).href,
     altText: 'Easy booking',
     title: 'easy-booking',
     description: 'easy-booking-text'

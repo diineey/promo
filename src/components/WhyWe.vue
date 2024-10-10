@@ -5,7 +5,7 @@ const { isMobile } = useIsMobile()
 
 const whyCards = [
   {
-    imgSrc: new URL('../assets/img/successful-business.svg', import.meta.url).href,
+    imgSrc: new URL('../assets/img/experts.png', import.meta.url).href,
     altText: 'Expert mentors',
     title: 'experts',
     description: 'experts-text'
@@ -17,13 +17,13 @@ const whyCards = [
     description: 'individual-approach-text'
   },
   {
-    imgSrc: new URL('../assets/img/comfort.svg', import.meta.url).href,
+    imgSrc: new URL('../assets/img/comfort.png', import.meta.url).href,
     altText: 'Convenience and flexibility',
     title: 'comfort',
     description: 'comfort-text'
   },
   {
-    imgSrc: new URL('../assets/img/case.svg', import.meta.url).href,
+    imgSrc: new URL('../assets/img/case.png', import.meta.url).href,
     altText: 'Convenience and flexibility',
     title: 'conditions',
     description: 'conditions-text'
