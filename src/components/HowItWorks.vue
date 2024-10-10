@@ -142,9 +142,9 @@ const cards = [
   }
 
   .works-card img {
-    width: 100%; /* Занимает всю ширину контейнера */
-    height: auto; /* Автоматически подбирается высота */
-    object-fit: cover; /* Масштабирует изображение без искажений */
+    width: 100%;
+    max-height: 160px;
+    object-fit: cover;
     border: none;
   }
 }
