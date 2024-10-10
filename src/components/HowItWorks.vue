@@ -60,7 +60,9 @@ const cards = [
       >
         <swiper-slide v-for="(card, index) in cards" :key="'first-' + index">
           <div class="works-card">
-            <img :src="card.imgSrc" :alt="card.altText">
+            <div class="works-card-img">
+              <img :src="card.imgSrc" :alt="card.altText">
+            </div>
             <h3>{{ $t(card.title) }}</h3>
             <p class="text-center">{{ $t(card.description) }}</p>
           </div>
@@ -141,9 +143,13 @@ const cards = [
     text-align: left;
   }
 
+  .works-card-img {
+    width: 160px;
+  }
+
   .works-card img {
-    width: auto;
-    max-height: 160px;
+    width: 100%;
+    height: auto;
     object-fit: cover;
     border: none;
   }
