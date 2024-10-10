@@ -60,7 +60,6 @@ const cards = [
       >
         <swiper-slide v-for="(card, index) in cards" :key="'first-' + index">
           <div class="works-card">
-            <img :src="card.imgSrc" :alt="card.altText">
             <h3>{{ $t(card.title) }}</h3>
             <p class="text-center">{{ $t(card.description) }}</p>
           </div>
