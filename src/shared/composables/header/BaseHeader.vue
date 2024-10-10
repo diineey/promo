@@ -62,7 +62,7 @@ document.body.style.overflow = isMenuOpen.value ? 'hidden' : 'auto';
         </div>
 
         <div class="tg-img">
-          <img src="@/assets/img/telegram.svg" alt="Telegram" width="171" />
+          <img src="@/assets/img/telegram.png" alt="Telegram" width="171" height="auto"/>
         </div>
 
         <BaseButton class="menu-button"/>

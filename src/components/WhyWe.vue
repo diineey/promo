@@ -11,7 +11,7 @@ const whyCards = [
     description: 'experts-text'
   },
   {
-    imgSrc: new URL('../assets/img/individual.svg', import.meta.url).href,
+    imgSrc: new URL('../assets/img/individual.png', import.meta.url).href,
     altText: 'Individual approach',
     title: 'individual-approach',
     description: 'individual-approach-text'
@@ -38,10 +38,6 @@ const whyCards = [
         <h2 class="h2">
           {{ $t('why-we') }}
         </h2>
-
-        <p class="why-text-p">
-          {{ $t('why-to-choose') }}
-        </p>
 
         <p v-html="$t('we-create')" class="text-center" />
       </div>
@@ -140,10 +136,6 @@ const whyCards = [
 .why-cards img {
   width: 220px;
   height: 220px;
-}
-
-.h2 {
-  margin-bottom: 16px;
 }
 
 @media screen and (max-width: 768px) {

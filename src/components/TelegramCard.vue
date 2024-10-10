@@ -18,7 +18,7 @@ import BaseButton from '@/shared/UI/BaseButton.vue'
       </div>
 
       <div class="telegram-card-img">
-        <img src="@/assets/img/telegram.svg" alt="Telegram">
+        <img src="@/assets/img/telegram.png" alt="Telegram">
       </div>
     </div>
   </main>
