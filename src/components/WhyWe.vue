@@ -109,13 +109,6 @@ const whyCards = [
   gap: 24px;
 }
 
-.why-text-p {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 26px;
-  text-align: center;
-}
-
 .why-cards {
   margin-top: 16px;
   display: flex;

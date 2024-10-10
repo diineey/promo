@@ -113,6 +113,12 @@ const cards = [
 }
 
 @media screen and (max-width: 768px) {
+  .swiper-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
   .works-wrapper {
     padding-bottom: 40px;
   }
