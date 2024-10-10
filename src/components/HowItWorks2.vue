@@ -21,13 +21,7 @@ const whyCards = [
     altText: 'Easy booking',
     title: 'easy-booking',
     description: 'easy-booking-text'
-  },
-  {
-    imgSrc: new URL('../assets/img/rent.png', import.meta.url).href,
-    altText: 'Easy booking',
-    title: 'easy-booking',
-    description: 'easy-booking-text'
-  },
+  }
 ]
 </script>
 
@@ -65,12 +59,10 @@ const whyCards = [
          }
         }"
       >
-        <swiper-slide v-for="(card, index) in whyCards" :key="'first-'+ index">
-          <div class="why-card">
+        <swiper-slide class="why-card" v-for="(card, index) in whyCards" :key="'first-'+ index">
             <img :src="card.imgSrc" :alt="card.altText">
             <h3>{{ $t(card.title) }}</h3>
             <p class="text-center">{{ $t(card.description) }}</p>
-          </div>
         </swiper-slide>
       </swiper-container>
 
