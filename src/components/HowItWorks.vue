@@ -117,6 +117,7 @@ const cards = [
     width: 100%;
     height: auto;
     display: block;
+    padding: 20px;
   }
 
   .works-wrapper {
