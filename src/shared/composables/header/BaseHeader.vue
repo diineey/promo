@@ -1,9 +1,25 @@
 <script setup>
 import BaseButton from '@/shared/UI/BaseButton.vue'
 import LanguagesSwitch from '@/shared/composables/languages-switch/LanguagesSwitch.vue'
-import {ref} from "vue";
+import {onMounted, ref} from "vue";
 
 const isMenuOpen = ref(false);
+
+function preloadImages() {
+  const images = [
+    new URL('@/assets/img/logo.svg', import.meta.url).href,
+    new URL('@/assets/img/telegram.png', import.meta.url).href
+  ];
+
+  images.forEach((src) => {
+    const img = new Image();
+    img.src = src;
+  });
+}
+
+onMounted(() => {
+  preloadImages();
+});
 
 function toggleMenu() {
   isMenuOpen.value = !isMenuOpen.value;
