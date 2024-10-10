@@ -1,7 +1,7 @@
 <script setup>
 import useIsMobile from '@/shared/utils/useIsMobile.js'
 
-const { isMobile } = useIsMobile()
+const {isMobile} = useIsMobile()
 
 const cards = [
   {
@@ -28,9 +28,11 @@ const cards = [
 <template>
   <main class="works-wrapper">
     <div class="works-content">
-      <h2 class="h2">{{ $t('how-it-works') }}</h2>
+      <h2 class="h2">
+        {{ $t('how-it-works') }}
+      </h2>
 
-      <p v-html="$t('mentory-is')" class="text-center" />
+      <p v-html="$t('mentory-is')" class="text-center"/>
 
       <swiper-container
         v-if="isMobile"
@@ -111,7 +113,6 @@ const cards = [
   align-items: center;
   width: 373px;
   gap: 10px;
-  overflow: hidden;
 }
 
 .works-cards img {
@@ -127,6 +128,7 @@ const cards = [
   .works-content {
     width: 100%;
     padding-top: 20px;
+    gap: 20px;
   }
 
   .works-cards {

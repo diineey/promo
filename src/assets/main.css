@@ -32,11 +32,6 @@ p {
     font-weight: 500;
 }
 
-img {
-    pointer-events: none;
-    border: none;
-}
-
 .text-center {
     text-align: center;
 }
