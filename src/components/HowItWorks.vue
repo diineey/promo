@@ -34,8 +34,9 @@ const cards = [
 
       <swiper-container
         v-if="isMobile"
+        style="overflow: hidden;"
         class="work-cards"
-        :slides-per-view="1.2"
+        :slides-per-view="1.1"
         :breakpoints="{
           '650': {
             slidesPerView: 2.5,
@@ -83,6 +84,10 @@ const cards = [
   justify-content: center;
 }
 
+.works-wrapper, .works-content {
+  overflow: hidden;
+}
+
 .works-content {
   width: 1160px;
   display: flex;
@@ -106,6 +111,7 @@ const cards = [
   align-items: center;
   width: 373px;
   gap: 10px;
+  overflow: hidden;
 }
 
 .works-cards img {
@@ -140,6 +146,7 @@ const cards = [
   .works-card img {
     width: 160px;
     height: 160px;
+    background-color: white;
   }
 }
 </style>

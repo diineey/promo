@@ -45,7 +45,7 @@ const whyCards = [
       <swiper-container
         v-if="isMobile"
         class="why-cards"
-        :slides-per-view="1.2"
+        :slides-per-view="1.1"
         :breakpoints="{
           '650': {
             slidesPerView: 2.5,
