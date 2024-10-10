@@ -142,7 +142,7 @@ const cards = [
   }
 
   .works-card img {
-    width: 170px;
+    width: 180px;
     height: auto;
   }
 }
