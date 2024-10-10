@@ -36,8 +36,8 @@ const cards = [
 
       <swiper-container
         v-if="isMobile"
-        style="overflow: hidden;"
         class="work-cards"
+        :space-between="20"
         :slides-per-view="1.1"
         :breakpoints="{
           '650': {
@@ -84,10 +84,6 @@ const cards = [
   width: 100%;
   display: flex;
   justify-content: center;
-}
-
-.works-wrapper, .works-content {
-  overflow: hidden;
 }
 
 .works-content {
