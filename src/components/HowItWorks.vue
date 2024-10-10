@@ -34,6 +34,7 @@ const cards = [
 
       <swiper-container
         v-if="isMobile"
+        class="work-cards"
         :slides-per-view="1.2"
         :breakpoints="{
           '650': {
@@ -113,13 +114,6 @@ const cards = [
 }
 
 @media screen and (max-width: 768px) {
-  .swiper-slide img {
-    width: 100%;
-    height: auto;
-    display: block;
-    padding: 20px;
-  }
-
   .works-wrapper {
     padding-bottom: 40px;
   }
