@@ -20,6 +20,7 @@ export default defineConfig({
     __INTLIFY_PROD_DEVTOOLS__: false
   },
   build: {
-    outDir: '/var/www/html'
+    outDir: '/var/www/html',
+    emptyOutDir: true
   }
 })
