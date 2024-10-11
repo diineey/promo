@@ -49,19 +49,19 @@ const whyCards = [
         :breakpoints="{
           '650': {
             slidesPerView: 2.5,
-            spaceBetween: 20
+            spaceBetween: 30
           },
           '570': {
             slidesPerView: 2.2,
-            spaceBetween: 20
+            spaceBetween: 30
           },
           '450': {
-            slidesPerView: 1.8,
-            spaceBetween: 20
+            slidesPerView: 1.7,
+            spaceBetween: 30
          },
          '375': {
-            slidesPerView: 1.4,
-            spaceBetween: 20
+            slidesPerView: 1.3,
+            spaceBetween: 30
          }
         }"
       >

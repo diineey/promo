@@ -6,8 +6,8 @@
       </h2>
 
       <p
-        v-html="$t('when-to-search-text')"
-        class="text-center"
+          v-html="$t('when-to-search-text')"
+          class="text-center"
       />
 
       <div class="when-cards">
@@ -45,7 +45,7 @@
           </div>
 
           <div class="when-card-text">
-            <p v-html="$t('when-to-search-stuck-text')" class="when-card-text-p" />
+            <p v-html="$t('when-to-search-stuck-text')" class="when-card-text-p"/>
           </div>
         </div>
 
@@ -89,7 +89,7 @@
 
 .when-cards {
   margin-top: 16px;
-  width: 638px;
+  width: 662px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -97,13 +97,17 @@
 }
 
 .when-card {
-  width: 298px;
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .when-card-title {
   border-radius: 20px;
   background-color: var(--red);
-  padding: 10px 13px;
+  padding: 10px;
+  width: 305px;
 }
 
 .when-card-title-p {
@@ -120,6 +124,7 @@
   height: 130px;
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .when-card-text-p {
@@ -140,6 +145,14 @@
     padding: 20px 0;
   }
 
+  .when-card {
+    width: 298px;
+  }
+
+  .when-card-title {
+    width: 293px;
+  }
+
   .when-card-title-p {
     font-size: 18px;
     line-height: 19px;
@@ -158,9 +171,6 @@
 
   .when-cards {
     gap: 20px;
-  }
-
-  .when-cards {
     width: 100%;
   }
 }
@@ -176,10 +186,11 @@
   }
 
   .when-card-title {
+    width: 100%;
     padding: 6px 0;
   }
 
-  .when-card-text{
+  .when-card-text {
     height: max-content;
     padding: 10px;
   }

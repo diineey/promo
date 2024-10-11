@@ -54,7 +54,7 @@ const cards = [
          },
          '375': {
             slidesPerView: 1.4,
-            spaceBetween: 20
+            spaceBetween: 30
          }
         }"
       >

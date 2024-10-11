@@ -33,7 +33,7 @@ const { isMobileForSteps } = useIsMobile();
               <div class="number">
                 <p>2</p>
               </div>
-              <p v-html="$t('step-2')" class="step-info-p"></p>
+              <p v-html="$t('step-2')" class="step-info-p text-right"></p>
             </div>
 
             <hr class="step-divider" />
@@ -153,6 +153,7 @@ const { isMobileForSteps } = useIsMobile();
   font-weight: 900;
   font-size: 34px;
   line-height: 37px;
+  width: 503px;
 }
 
 .step-info p span {

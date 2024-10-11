@@ -38,7 +38,6 @@ import BaseButton from '@/shared/UI/BaseButton.vue'
   border-radius: 20px;
   padding: 25px 58px 45px 40px;
   width: 964px;
-  height: 313px;
   display: flex;
   justify-content: space-between;
   gap: 20px;

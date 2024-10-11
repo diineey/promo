@@ -28,6 +28,7 @@ button {
 .button-wrapper {
   position: relative;
   width: fit-content;
+  max-width: 500px;
 }
 
 .button {
