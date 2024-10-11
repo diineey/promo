@@ -17,8 +17,6 @@ register()
 
   <Header />
 
-  <h3>BUILD WORKS</h3>
-
   <HowItWorks />
 
   <WhenToSearch />
