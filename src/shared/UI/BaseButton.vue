@@ -9,10 +9,10 @@ defineProps({
 
 <template>
   <div class="button-wrapper">
-    <button class="button">
+    <a class="button" href="https://t.me/mentory_uz_bot" target="_blank">
       {{ $t('tg') }}
       <img src="@/assets/icons/tg.svg" alt="Telegram">
-    </button>
+    </a>
 
     <span class="border" :style="{ borderColor: color }"/>
   </div>
@@ -44,6 +44,8 @@ button {
   font-weight: 700;
   position: relative;
   z-index: 2;
+  text-decoration: none;
+  text-align: center;
 }
 
 .border {

@@ -4,13 +4,13 @@
       <img class="footer-logo" src="@/assets/img/logo.svg" alt="logo">
 
       <div class="footer-icons">
-        <a href="#">
+        <a href="https://www.linkedin.com/company/mentoryuz" target="_blank">
           <img src="@/assets/icons/linkedin.svg" alt="LinkedIn">
         </a>
-        <a href="#">
+        <a href="https://t.me/mentory_uz_bot" target="_blank">
           <img src="@/assets/icons/telegram.svg" alt="Telegram">
         </a>
-        <a href="#">
+        <a href="https://www.instagram.com/mentory.uz" target="_blank">
           <img src="@/assets/icons/instagram.svg" alt="Instagram">
         </a>
       </div>
@@ -94,3 +94,5 @@
   }
 }
 </style>
+<script setup lang="ts">
+</script>

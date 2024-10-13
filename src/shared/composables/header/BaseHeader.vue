@@ -84,10 +84,10 @@ document.body.style.overflow = isMenuOpen.value ? 'hidden' : 'auto';
         <BaseButton class="menu-button"/>
 
         <div class="menu-icons">
-          <a href="#">
+          <a href="https://www.linkedin.com/company/mentoryuz" target="_blank">
             <img src="@/assets/icons/linkedin.svg" alt="LinkedIn">
           </a>
-          <a href="#">
+          <a href="https://www.instagram.com/mentory.uz" target="_blank">
             <img src="@/assets/icons/instagram.svg" alt="Instagram">
           </a>
         </div>
